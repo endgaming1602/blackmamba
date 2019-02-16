@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>magazine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#03a6f3">
+    <link rel="stylesheet" href="{% static 'frontend/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'frontend/css/owl.carousel.min.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'frontend/css/styles.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#" class="web-url">www.mywebsite.com</a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="share align-middle">
+                            <span class="fb"><i class="fa fa-facebook-official"></i></span>
+                            <span class="instagram"><i class="fa fa-instagram"></i></span>
+                            <span class="twitter"><i class="fa fa-twitter"></i></span>
+                            <span class="pinterest"><i class="fa fa-pinterest"></i></span>
+                            <span class="google"><i class="fa fa-google-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-menu" data-sticky-nav="1" data-sticky-type="smart">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="index.html"><img src="{% static 'frontend/img/logo.png' %}" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="navbar-item active">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="{% url 'about' %}" class="nav-link">About</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="{% url 'category' %}" class="nav-link">categories</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="{% url 'blog' %}" class="nav-link">Blog</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="{% url 'contact' %}" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search here..." aria-label="Search">
+                            <span class="fa fa-search"></span>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="full-menu">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                        <ul class="navbar-nav">
+                            <li class="navbar-item active">
+                                <a href="index.html" class="nav-link">Travel</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="shop.html" class="nav-link">Technology</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="about.html" class="nav-link">Sports</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="faq.html" class="nav-link">Food </a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="login.html" class="nav-link"> Life Style</a>
+                            </li>
+                            <li class="navbar-item active">
+                                <a href="index.html" class="nav-link">Fashion</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="shop.html" class="nav-link">Photography</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="about.html" class="nav-link"> Cars </a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="faq.html" class="nav-link">Health & Fitness </a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="login.html" class="nav-link">Other</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+
+            <div class="footer-sec">
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                       <img src="{% static 'frontend/img/logo.png' %}" alt="logo">
+                       <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</h6>
+                       <h6>took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but</h6>
+                    </div>
+                    <div class="col-md-4">
+                       <h3>categories</h3>
+                       <ul class="categories">
+                           <li><a href="">Photography</a></li>
+                           <li><a href="">Health & Wellness</a></li>
+                           <li><a href="">Internet</a></li>
+                           <li><a href="">High End Fashion</a></li>
+                           <li><a href="">Other Category</a></li>
+                           <li><a href="">Politics</a></li>
+                           <li><a href="">Movies</a></li>
+                           <li><a href="">Internet</a></li>
+                           <li><a href="">High End Fashion</a></li>
+                           <li><a href="">Other Category</a></li>
+                           <li><a href="">Politics</a></li>
+                           <li><a href="">Movies</a></li>
+                           <li><a href="">Tech News</a></li>
+                           <li><a href="">Travelling</a></li>
+                       </ul>
+                    </div>
+                    <div class="col-md-4 tags">
+                        <h3>tags</h3>
+                        <ul>
+                            <li><a href="#" class="btn">photography</a></li>
+                            <li><a href="" class="btn">food</a></li>
+                            <li><a href="" class="btn">nature</a></li>
+                            <li><a href="" class="btn">nature</a></li>
+                            <li><a href="" class="btn">health & wellness</a></li>
+                            <li><a href="" class="btn">photography</a></li>
+                            <li><a href="" class="btn">nature</a></li>
+                            <li><a href="" class="btn">food</a></li>
+                            <li><a href="" class="btn">health & wellness</a></li>
+                            <li><a href="" class="btn">nature</a></li>
+                            <li><a href="" class="btn">health & wellness</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="terms-conditions">
+            <h5>(C) 2017. All Rights Reserved. Magazine Themes</h5>
+        </div>
+    </footer>
+    <script src="{% static 'frontend/js/jquery.min.js' %}"></script>
+    <script src="{% static 'frontend/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'frontend/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'frontend/js/custom.js' %}"></script>
+</body>
+
+</html>
