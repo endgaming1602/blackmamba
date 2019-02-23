@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'blackmambablog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'blackmamba',
-        'USER': 'postgres',
-        'PASSWORD': 'Sariawan27',
-        'HOST': 'localhost',
+        'HOST': '127.0.0.1',
         'PORT': '5432',
+        'NAME': 'blackmambadb',
+        'USER': 'luffy',
+        'PASSWORD': 'gomugomu'
     }
 }
 
