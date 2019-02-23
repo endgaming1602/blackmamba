@@ -1,0 +1,11 @@
+/* This is a css file that is created by me */
+
+table{
+  table-layout: fixed;
+}
+
+td{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
